@@ -27,7 +27,7 @@ function renderProductGallery() {
     const card = document.createElement('div');
     card.className = 'product-card';
     
-    const imageHtml = `<img class="product-image" src="${product.image}" alt="${product.name}" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'product-icon-fallback\'><i class=\'fas fa-feather-alt\'></i></div>';">`;
+    const imageHtml = `<img class="product-image" src="${product.image}" alt="${product.name}" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'product-icon-fallback\\'><i class=\\'fas fa-feather-alt\\'></i></div>';">`;
     
     card.innerHTML = `
       ${imageHtml}
